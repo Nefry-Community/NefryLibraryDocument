@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    steps:
+      - checkout
+      - run:
+          name: chmod permissions
+          command: chmod +x ./ReViewDeploy.sh
+      - run:
+          name: Upload to ReViewDeploy
+          command: ./ReViewDeploy.sh
