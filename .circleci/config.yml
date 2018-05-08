@@ -1,8 +1,8 @@
 version: 2
 jobs:
   build:
-    machine:
-      timezone: Asia/Tokyo
+    docker:
+      - image: buildpack-deps:trusty
     steps:
       - checkout
       - run:
